@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --background: #050505;
+  --foreground: #e5e7eb;
+  --sidebar: #0F1629;
+  --card: #0d0d0d;
+  --card-border: #262626;
+  --primary: #3b82f6;
+  --destructive: #ef4444; /* Critical Alert */
+  --warning: #f59e0b; /* High Alert */
+  --success: #1D9E75; /* Normal/Safe */
+  --muted: #1f2937;
+  --muted-foreground: #9ca3af;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.bento-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  border-color: #404040;
+  transform: translateY(-2px);
+}
+
+.label-tag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.glow-red {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.15);
+}
+
+.glow-amber {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+.cis-rule-line {
+  border-left: 2px solid var(--destructive);
+  padding-left: 16px;
+  transition: border-color 0.3s;
+}
+
+@layer utilities {
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+

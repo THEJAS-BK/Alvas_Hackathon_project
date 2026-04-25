@@ -1,0 +1,6 @@
+{
+  "name": "Vigil SOC Dashboard",
+  "description": "A cybersecurity SOC dashboard demonstrating proactive insider threat detection using CIS Benchmarking and dynamic risk scoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

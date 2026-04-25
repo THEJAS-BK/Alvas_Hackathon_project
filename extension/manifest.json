@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Vigil Security Tracker",
+  "version": "1.0",
+  "description": "Monitors browser activity for the Vigil Security Dashboard",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*",
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
