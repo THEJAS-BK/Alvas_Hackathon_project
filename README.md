@@ -1,50 +1,105 @@
 # Vigil – Internal Threat Detection Dashboard
 
-A simple internal dashboard that visualizes suspicious employee activity and enforces basic access revocation.
+> A lightweight internal security dashboard for monitoring suspicious employee activity, visualizing threat incidents, and enforcing access control policies.
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-### Dashboard
-![Dashboard](images/dashboard.png)
+| Dashboard | Incident View |
+|-----------|--------------|
+| ![Dashboard](images/dashboard.png) | ![Incident View](images/indPersonal.png) |
 
-### Individual Incident View
-![Incident View](images/indPersonal.png)
-
-### Personnel Directory
-![Personnel](images/personnel.png)
-
-### Alerts Hub
-![Alerts](images/securityAlert.png)
+| Personnel Directory | Alerts Hub |
+|---------------------|------------|
+| ![Personnel](images/personnel.png) | ![Alerts](images/securityAlert.png) |
 
 ---
 
-## Features
+## ✨ Features
 
-- Displays security violations across employees
-- Detects:
-  - Malicious USB usage
-  - Phishing link clicks
-  - Unauthorized access attempts
-- Automatically marks users as **Access Removed**
-- Central alerts dashboard
-- Personnel directory with status tracking
-- Individual incident timeline view
-
----
-
-## Tech Stack
-
-- **Frontend:** React (Vite), Tailwind CSS  
-- **Backend:** Node.js, Express  
+- **Security Violation Tracking** – Centralized view of violations across all employees
+- **Threat Detection** for:
+  - 🔌 Malicious USB device usage
+  - 🎣 Phishing link clicks
+  - 🔒 Unauthorized access attempts
+- **Automated Access Revocation** – Flags and removes access for high-risk users
+- **Alerts Hub** – Real-time central dashboard for active security alerts
+- **Personnel Directory** – Employee status tracking with risk indicators
+- **Incident Timeline** – Individual per-employee incident history view
 
 ---
 
-## Setup
+## 🛠 Tech Stack
 
-### Clone the repository
+| Layer | Technology |
+|-------|------------|
+| Frontend | React (Vite), Tailwind CSS |
+| Backend | Node.js, Express |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- npm or yarn
+
+### Installation
 
 ```bash
-git clone <https://github.com/THEJAS-BK/Issue_Tracker.git>
+# Clone the repository
+git clone https://github.com/THEJAS-BK/Issue_Tracker.git
 cd Alvas_Hackathon_project
+
+# Install frontend dependencies
+cd client
+npm install
+
+# Install backend dependencies
+cd ../server
+npm install
+```
+
+### Running the App
+
+```bash
+# Start the backend server
+cd server
+npm run dev
+
+# In a separate terminal, start the frontend
+cd client
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` by default.
+
+---
+
+## 📁 Project Structure
+Alvas_Hackathon_project/
+├── client/          # React frontend (Vite + Tailwind)
+│   └── src/
+│       ├── components/
+│       └── pages/
+├── server/          # Node.js + Express backend
+│   └── routes/
+└── images/          # Screenshots
+---
+
+## 👥 Contributors
+
+| Name | GitHub |
+|------|--------|
+| Thejas BK | [@THEJAS-BK](https://github.com/THEJAS-BK) |
+| Shreyas Kamath | [@skamath01](https://github.com/skamath01) |
+| Shreya K | [@Shreyak2006](https://github.com/Shreyak2006) |
+| Nisha Shetty | [@nisha-shetty03](https://github.com/nisha-shetty03) |
+
+---
+
+## 📄 License
+
+This project was built for **Alvas Hackathon**. All rights reserved by the contributors.
