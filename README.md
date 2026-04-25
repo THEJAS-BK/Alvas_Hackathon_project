@@ -76,18 +76,6 @@ npm run dev
 
 The app will be available at `http://localhost:5173` by default.
 
----
-
-## 📁 Project Structure
-Alvas_Hackathon_project/
-├── client/          # React frontend (Vite + Tailwind)
-│   └── src/
-│       ├── components/
-│       └── pages/
-├── server/          # Node.js + Express backend
-│   └── routes/
-└── images/          # Screenshots
----
 
 ## 👥 Contributors
 
