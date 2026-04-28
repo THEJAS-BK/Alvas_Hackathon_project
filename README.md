@@ -49,19 +49,6 @@
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/THEJAS-BK/Issue_Tracker.git
-cd Alvas_Hackathon_project
-
-# Install frontend dependencies
-cd client
-npm install
-
-# Install backend dependencies
-cd ../server
-npm install
-```
-
 ### Running the App
 
 ```bash
