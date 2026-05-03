@@ -1,3 +1,4 @@
+(Prototype project)
 # Vigil – Internal Threat Detection Dashboard
 
 > A lightweight internal security dashboard for monitoring suspicious employee activity, visualizing threat incidents, and enforcing access control policies.
